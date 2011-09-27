@@ -1,7 +1,8 @@
 # -*- coding: utf-8 -*-
 # CRISTIAN ECHEVERRÍA RABÍ
 
-import string, datetime
+import string
+from datetime import datetime
 
 #-----------------------------------------------------------------------------------------
 
@@ -91,7 +92,7 @@ class Time(Int):
     
     def adapt(self, text):
         try:
-            val = datetime.datetime.strptime(text, self.format)
+            val = datetime.strptime(text, self.format)
             return val.time()
         except ValueError:
             raise ValueError("Time expected")
@@ -109,7 +110,7 @@ class Date(Time):
     
     def adapt(self, text):
         try:
-            val = datetime.datetime.strptime(text, self.format)
+            val = datetime.strptime(text, self.format)
             return val.date()
         except ValueError:
             raise ValueError("Date expected")
@@ -123,6 +124,6 @@ class DateTime(Time):
     
     def adapt(self, text):
         try:
-            return datetime.datetime.strptime(text, self.format)
+            return datetime.strptime(text, self.format)
         except ValueError:
             raise ValueError("DateTime expected")
