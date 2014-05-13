@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 # CRISTIAN ECHEVERRÍA RABÍ
 
 import string
@@ -39,10 +38,7 @@ class Base(object):
 #-----------------------------------------------------------------------------------------
 
 class Text(Base):
-    
-    def adapt(self, text):
-        return unicode(text)
-
+    pass
 
 #-----------------------------------------------------------------------------------------
 
