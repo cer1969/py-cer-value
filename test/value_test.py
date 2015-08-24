@@ -1,6 +1,6 @@
 # CRISTIAN ECHEVERRÍA RABÍ
 
-from datetime import datetime, date, time
+#from datetime import datetime, date, time
 from cer.value import validator
 from cer.value import check
 from cer.value import deco
